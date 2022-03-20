@@ -7,8 +7,10 @@ import NavBar from "./NavBar";
 const HomePage = () => {
   return (
     <Fragment>
-      <NavBar></NavBar>
-      <ButtonForAuth></ButtonForAuth>
+      <div className="flex justify-between">
+        <NavBar></NavBar>
+        <ButtonForAuth></ButtonForAuth>
+      </div>
       <Outlet></Outlet>
     </Fragment>
   );
